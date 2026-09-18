@@ -1,0 +1,21 @@
+name: Formula Audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Formula/**"
+  pull_request:
+    paths:
+      - "Formula/**"
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew style Formula/preflight.rb
+      - run: |
+          brew tap newrelic-experimental/preflight "$GITHUB_WORKSPACE"
+          brew trust newrelic-experimental/preflight
+          brew audit --strict --online newrelic-experimental/preflight/preflight
