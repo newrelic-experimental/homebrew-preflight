@@ -1,8 +1,8 @@
 class Preflight < Formula
   desc "AI coding observability for Claude Code and other AI coding tools"
   homepage "https://github.com/newrelic-experimental/preflight"
-  url "https://registry.npmjs.org/@newrelic/preflight/-/preflight-1.57.3.tgz"
-  sha256 "614fc3e2a022f7f04c6a135821c75edcd88c28db444c2084d80084eaff6dd66a"
+  url "https://registry.npmjs.org/@newrelic/preflight/-/preflight-1.58.4.tgz"
+  sha256 "e2bf5cdb661faff172d088fb584fe93bb38a00d3ed21134ed8cad3b3961107a7"
   license "Apache-2.0"
 
   depends_on "node"
