@@ -6,5 +6,6 @@ Homebrew tap for [@newrelic/preflight](https://github.com/newrelic-experimental/
 
 ```bash
 brew tap newrelic-experimental/preflight
+brew trust newrelic-experimental/preflight
 brew install preflight
 ```
